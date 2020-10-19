@@ -1,0 +1,14 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: swir-operator
+subjects:
+- kind: ServiceAccount
+  name: swir-operator
+  namespace: swirop # change to point to the namespace you installed your operator
+roleRef:
+  kind: ClusterRole
+  name: swir-operator
+  apiGroup: rbac.authorization.k8s.io
+  
+
