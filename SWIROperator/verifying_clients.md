@@ -10,6 +10,6 @@ As you see there is only one container in each pod and closer inspection will sh
 
 `kubectl -n library logs helpdesk-`{{copy}}<kbd>Tab</kbd>
 
-You need to paste this line into the terminal and press <kbd>Tab</kbd> for the autocomplete to populate the full name of the pod.
+	_You need to paste this line into the terminal and press <kbd>Tab</kbd> for the autocomplete to populate the full name of the pod._
 
 Which is correct since we have not deployed the SWIR Operator yet... which we should do in the next step.

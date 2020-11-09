@@ -56,7 +56,7 @@
 	"hideHiddenFiles":"true",
 	"dashboards": [
 	    {"name": "swir.rs", "href": "https://swir.rs"},
-	    {"name": "README", "href": "https://github.com/swir-rs/swir/blob/master/swir_in_action_examples/kubernetes/service_invocation_example/README.md"}
+	    {"name": "README", "href": "https://github.com/swir-rs/swir-examples/blob/master/kubernetes/service_invocation_example/README.md"}
 	]
     },
     "backend": {
