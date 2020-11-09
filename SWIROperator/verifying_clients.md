@@ -6,10 +6,12 @@ To verify that the clients are running run
 You might need to repeat this command until all pods are in **Ready** state
 
 
-As you see there is only one container in each pod and closer inspection will show that **Helpdesk** is not able to connect to its sidecar.
+As you see there is only one container in each pod. You can inspect the logs by running
 
 `kubectl -n library logs helpdesk-`{{copy}}<kbd>Tab</kbd>
 
-	_You need to paste this line into the terminal and press <kbd>Tab</kbd> for the autocomplete to populate the full name of the pod._
+	You need to paste this line into the terminal and press <kbd>Tab</kbd> for the autocomplete to populate the full name of the pod.
+	
+Closer inspection will show that there are plenty of warning messages in the log indicating that **Helpdesk** is not able to connect to its sidecar...
 
-Which is correct since we have not deployed the SWIR Operator yet... which we should do in the next step.
+...which is correct since we have not deployed the SWIR Operator yet... and this what we are going to do in the next step.
