@@ -1,0 +1,65 @@
+{
+    "title": "SWIR Kubernetes Operator",
+    "description": "Configure and deploy Service Discovery and Invocation using SWIR Kubernetes Operator across microservices sharing a single Kubernetes namespace",
+    "icon": "https://raw.githubusercontent.com/swir-rs/swir/master/graphics/swir_logo.png",
+    "difficulty": "Beginner",
+    "time": "10 mins",
+    "details": {
+	"steps": [
+	    {
+		"title": "Scenario Overview",
+		"text": "overview.md"
+	    },
+	    {
+		"title": "Deploying SWIR Clients",
+		"text": "deploying_clients.md"
+	    },
+	    {
+		"title": "Veryfying SWIR Clients",
+		"text": "verifying_clients.md"
+	    },
+	    {
+		"title": "Deploying SWIR Operator",
+		"text": "deploying_operator.md"
+	    },
+	    {
+		"title": "In the background of SWIR Operator",
+		"text": "in_the_background.md"
+	    },
+	    {
+		"title": "Veryfying SWIR Clients...again",
+		"text": "verifying_clients_again.md"
+	    }
+	    
+	],
+	"intro": {
+	    "text": "intro.md"
+	},
+	"finish": {
+	    "text": "finish.md"
+	},
+	"assets": {
+	    "client": [
+		{"file": "clients/*", "target": "/root/"},
+		{"file": "certs/*", "target": "/root/"},
+		{"file": "operator/*", "target": "/root/"}
+	    ]
+	}
+    },
+    "environment": {
+	"showdashboard": false,
+	"uilayout": "editor-terminal",
+	"uisettings": "javascript",
+	"showvisualise": false,
+	"showide": false,
+	"exclusionPatterns": ["./certs/*"],
+	"hideHiddenFiles":"true",
+	"dashboards": [
+	    {"name": "swir.rs", "href": "https://swir.rs"},
+	    {"name": "README", "href": "https://github.com/swir-rs/swir-examples/blob/master/kubernetes/service_invocation_example/README.md"}
+	]
+    },
+    "backend": {
+	"imageid": "kubernetes-cluster-running"
+    }
+}
